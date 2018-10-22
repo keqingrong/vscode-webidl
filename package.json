@@ -1,0 +1,46 @@
+{
+  "name": "vscode-webidl",
+  "displayName": "WebIDL Language",
+  "description": "WebIDL language support for VS Code",
+  "version": "0.0.1",
+  "publisher": "keqingrong",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "webidl",
+        "aliases": [
+          "WebIDL",
+          "webidl"
+        ],
+        "extensions": [
+          ".idl",
+          ".webidl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "webidl",
+        "scopeName": "source.webidl",
+        "path": "./syntaxes/webidl.tmLanguage"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keqingrong/vscode-webidl.git"
+  },
+  "keywords": [
+      "idl",
+      "webidl"
+  ],
+  "author": "Qingrong Ke <keqingrong1992@gmail.com> (https://keqingrong.github.io/)",
+  "license": "MIT"
+}
